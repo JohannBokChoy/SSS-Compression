@@ -1,12 +1,23 @@
-## Welcome to GitHub Pages
+# Simple Speedy Single-Pass Lossless Image Compression
 
-You can use the [editor on GitHub](https://github.com/JohannBokChoy/SSS-Compression/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Overview
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- Lossless image compression is a tradeoff between speed (of encoding and decoding) and compression ratio
+- Most popular current methods (PNG, WebP, FLIF) focus on the latter at expense of speed
+- Some niche use cases might value significant speedup over gains in compression ratio
+--“Slightly compressed” is heavily used in 3D graphics -- see ETC2, DXT, etc.
+It’s useful because the size savings apply in memory, because decompression is so cheap it can be done on the fly.
 
-### Markdown
+It has to be lossy because you want a guaranteed fixed-rate compression ratio (eg 4x) and there’s no way to do that losslessly.
+- Aim to build a significantly quicker image compression method with comparable compression ability
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Approach
+In order to achieve significant speedup, I tried to combine multiple lossless compression methods that can all be done in one pass of the image. As a result,
+both encoding and decoding the image are in linear time.
+## Compression Methods
+### Run-Length Encoding
+### Delta Compression
+
 
 ```markdown
 Syntax highlighted code block
