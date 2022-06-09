@@ -5,7 +5,8 @@
 - Lossless image compression is a tradeoff between speed (of encoding and decoding) and compression ratio
 - Most popular current methods (PNG, WebP, FLIF) focus on the latter at expense of speed
 - Some niche use cases might value significant speedup over gains in compression ratio
---“Slightly compressed” is heavily used in 3D graphics -- see ETC2, DXT, etc.
+-“Slightly compressed” is heavily used in 3D graphics -- see ETC2, DXT, etc.
+-Large-scale real-time object detection/facial recognition systems to improve bandwidth at minimal cost 
 It’s useful because the size savings apply in memory, because decompression is so cheap it can be done on the fly.
 
 It has to be lossy because you want a guaranteed fixed-rate compression ratio (eg 4x) and there’s no way to do that losslessly.
