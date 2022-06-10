@@ -40,7 +40,8 @@ I ran benchmarks using a [Kodak PNG image library](http://r0k.us/graphics/kodak/
 
 **kodim01** 
 
-**PNG Size: 736,501 bytes: 1.60x compression **
+**PNG Size: 736,501 bytes: 1.60x compression**
+
 **Our size: 745,676 bytes: 1.58x compression**
 
 ![image](https://user-images.githubusercontent.com/37307088/173007684-cf8ec9bc-1eb5-4fad-a5c5-92e1dd46a19e.png)
@@ -51,7 +52,9 @@ I ran benchmarks using a [Kodak PNG image library](http://r0k.us/graphics/kodak/
 **kodim04** 
 
 **PNG Size: 634,432 bytes: 1.86x compression**
+
 **Our size: 722,254 bytes: 1.63x compression**
+
 ![image](https://user-images.githubusercontent.com/37307088/173007371-a736f754-d861-4d5b-9ed7-45eaa5826b1d.png)
 
 ![image](https://user-images.githubusercontent.com/37307088/173160468-7f583258-0438-4deb-bef0-22bc75681fce.png)
