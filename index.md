@@ -36,15 +36,19 @@ I ran benchmarks using Kodak's PNG image library*. All images were either 768x51
 
 ![image](https://user-images.githubusercontent.com/37307088/173007085-167b481b-45ce-4fbf-8e97-921a60eb7852.png)
 
-**PNG Size: 736,501 bytes
+**PNG Size: 736,501 bytes**
+**Our size: 745,597 bytes**
 
 ![image](https://user-images.githubusercontent.com/37307088/173007371-a736f754-d861-4d5b-9ed7-45eaa5826b1d.png)
 
 ![image](https://user-images.githubusercontent.com/37307088/173007434-e969dc7e-aede-48b5-9d9e-55ab1a0c34d8.png)
 
-**PNG Size: 637,432 bytes
+**PNG Size: 637,432 bytes**
+**Our size: 835,703 bytes**
 
-I was unable to get PNG compression time benchmarks on my system using C, but
+For images with high redundancy, our method seems to perform about the same as png. For images with lesser redundancy (second image), our files were slightly larger.
+I was unable to get extensive PNG compression time benchmarks on my system using C, but estimates on a single 768x512 image were about 200 ms to encode.
+
 
 
 
@@ -72,7 +76,7 @@ Outside of real-time computer vision applications, speed-optimized image compres
 
 [QOI](https://qoiformat.org/qoi-specification.pdf)
 
-[zlib](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2 - zlib)
+[zlib](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2)
 
 [Modified Hilbert curve for image compression](https://www.mdpi.com/1099-4300/23/7/836/pdf)
 
