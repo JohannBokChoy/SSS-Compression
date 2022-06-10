@@ -17,9 +17,9 @@ both encoding and decoding the image are in linear time.
 ### Run-Length Encoding
 ### Delta Compression
 
-## Potential Future Optimizations
-- One potential optimization that could result in significant compression ratio gains is encoding and decoding our image array in a Hilbert curve order rather than row-wise. This is because nearby pixels in images tend to have similar rgb values, so if we can traverse our image in a "group-like" fashion while encoding, we may see more pixels that can be encoded as a run or as a delta of the previous pixel as compared to our current row-wise traversal, where the next pixel can jump from the end of one row to the start of another.
-(![image](https://user-images.githubusercontent.com/37307088/172988174-f30c7205-60af-46fc-9ae3-dde79f2bc373.png))
+## Potential Optimizations
+- One potential optimization that could result in significant compression ratio gains is encoding and decoding our image array in a Modified Hilbert curve (see citations) order rather than row-wise. This is because adjacent pixels in images tend to have similar rgb values, so if we can traverse our image in a "group-like" fashion while encoding, we may see more pixels that can be encoded as a run, as a delta, or as a member of the lookback array, as compared to our current row-wise traversal.
+![image](https://user-images.githubusercontent.com/37307088/172988953-072b47c3-bf0a-4a7e-852c-e4e262f1996b.png)
 
 
 ```markdown
@@ -57,6 +57,6 @@ Compression Methods
 http://www.diva-portal.org/smash/get/diva2:817831/FULLTEXT01.pdf - Delta encoding for image compression
 https://qoiformat.org/qoi-specification.pdf - QOI
 https://datatracker.ietf.org/doc/html/rfc1950#section-2.2 - zlib
-https://en.wikipedia.org/wiki/Hilbert_curve - Hilbert curve (for image traversal)
+[https://en.wikipedia.org/wiki/Hilbert_curve](https://www.mdpi.com/1099-4300/23/7/836/pdf) - Modified Hilbert curve for image compression
 
 
