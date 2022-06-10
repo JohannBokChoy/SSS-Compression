@@ -1,267 +1,266 @@
 kodim01
 Original Size: 1179648 bytes
-Compressed Size: 745675 bytes
+Compressed Size: 745676 bytes
 Percent Size: 63.21 %
 
-Run Pixel Total: 24897
-Cache Pixel Total: 63216
-Small Delta Pixel Total: 20339
-Delta Pixel Total: 247284
-Original Pixel Total: 37480
+Run Pixel Total: 24901 (~57071 bytes saved)
+Cache Pixel Total: 63216 (~126432 bytes saved)
+Small Delta Pixel Total: 20339 (~40678 bytes saved)
+Delta Pixel Total: 247284 (~247284 bytes saved)
+Original Pixel Total: 37480 (~12493 bytes gained)
 
 kodim02
 Original Size: 1179648 bytes
 Compressed Size: 673048 bytes
 Percent Size: 57.06 %
 
-Run Pixel Total: 36720
-Cache Pixel Total: 109428
-Small Delta Pixel Total: 27359
-Delta Pixel Total: 184777
-Original Pixel Total: 34932
+Run Pixel Total: 36720 (~83181 bytes saved)
+Cache Pixel Total: 109428 (~218856 bytes saved)
+Small Delta Pixel Total: 27359 (~54718 bytes saved)
+Delta Pixel Total: 184777 (~184777 bytes saved)
+Original Pixel Total: 34932 (~11644 bytes gained)
 
 kodim03
 Original Size: 1179648 bytes
 Compressed Size: 562431 bytes
 Percent Size: 47.68 %
 
-Run Pixel Total: 79410
-Cache Pixel Total: 110429
-Small Delta Pixel Total: 37501
-Delta Pixel Total: 150823
-Original Pixel Total: 15053
+Run Pixel Total: 79410 (~185587 bytes saved)
+Cache Pixel Total: 110429 (~220858 bytes saved)
+Small Delta Pixel Total: 37501 (~75002 bytes saved)
+Delta Pixel Total: 150823 (~150823 bytes saved)
+Original Pixel Total: 15053 (~5017 bytes gained)
 
 kodim04
 Original Size: 1179648 bytes
 Compressed Size: 722254 bytes
 Percent Size: 61.23 %
 
-Run Pixel Total: 33628
-Cache Pixel Total: 58668
-Small Delta Pixel Total: 34038
-Delta Pixel Total: 231853
-Original Pixel Total: 35029
+Run Pixel Total: 33628 (~75158 bytes saved)
+Cache Pixel Total: 58668 (~117336 bytes saved)
+Small Delta Pixel Total: 34038 (~68076 bytes saved)
+Delta Pixel Total: 231853 (~231853 bytes saved)
+Original Pixel Total: 35029 (~11676 bytes gained)
 
 kodim05
 Original Size: 1179648 bytes
 Compressed Size: 836294 bytes
 Percent Size: 70.89 %
 
-Run Pixel Total: 21696
-Cache Pixel Total: 29003
-Small Delta Pixel Total: 24600
-Delta Pixel Total: 252334
-Original Pixel Total: 65583
+Run Pixel Total: 21696 (~49397 bytes saved)
+Cache Pixel Total: 29003 (~58006 bytes saved)
+Small Delta Pixel Total: 24600 (~49200 bytes saved)
+Delta Pixel Total: 252334 (~252334 bytes saved)
+Original Pixel Total: 65583 (~21861 bytes gained)
 
 kodim6
 Original Size: 1179648 bytes
 Compressed Size: 657095 bytes
 Percent Size: 55.70 %
 
-Run Pixel Total: 38097
-Cache Pixel Total: 88051
-Small Delta Pixel Total: 28838
-Delta Pixel Total: 220387
-Original Pixel Total: 17843
+Run Pixel Total: 38097 (~86231 bytes saved)
+Cache Pixel Total: 88051 (~176102 bytes saved)
+Small Delta Pixel Total: 28838 (~57676 bytes saved)
+Delta Pixel Total: 220387 (~220387 bytes saved)
+Original Pixel Total: 17843 (~5947 bytes gained)
 
 kodim7
 Original Size: 1179648 bytes
 Compressed Size: 614640 bytes
 Percent Size: 52.10 %
 
-Run Pixel Total: 65706
-Cache Pixel Total: 98504
-Small Delta Pixel Total: 34772
-Delta Pixel Total: 170437
-Original Pixel Total: 23797
+Run Pixel Total: 65706 (~151816 bytes saved)
+Cache Pixel Total: 98504 (~197008 bytes saved)
+Small Delta Pixel Total: 34772 (~69544 bytes saved)
+Delta Pixel Total: 170437 (~170437 bytes saved)
+Original Pixel Total: 23797 (~7932 bytes gained)
 
 kodim8
 Original Size: 1179648 bytes
 Compressed Size: 874421 bytes
 Percent Size: 74.13 %
 
-Run Pixel Total: 18695
-Cache Pixel Total: 36110
-Small Delta Pixel Total: 18218
-Delta Pixel Total: 236526
-Original Pixel Total: 83667
+Run Pixel Total: 18695 (~43712 bytes saved)
+Cache Pixel Total: 36110 (~72220 bytes saved)
+Small Delta Pixel Total: 18218 (~36436 bytes saved)
+Delta Pixel Total: 236526 (~236526 bytes saved)
+Original Pixel Total: 83667 (~27889 bytes gained)
 
 kodim9
 Original Size: 1179648 bytes
 Compressed Size: 618377 bytes
 Percent Size: 52.42 %
 
-Run Pixel Total: 39568
-Cache Pixel Total: 123852
-Small Delta Pixel Total: 29970
-Delta Pixel Total: 183135
-Original Pixel Total: 16691
+Run Pixel Total: 39568 (~87183 bytes saved)
+Cache Pixel Total: 123852 (~247704 bytes saved)
+Small Delta Pixel Total: 29970 (~59940 bytes saved)
+Delta Pixel Total: 183135 (~183135 bytes saved)
+Original Pixel Total: 16691 (~5563 bytes gained)
 
 kodim10
 Original Size: 1179648 bytes
 Compressed Size: 658998 bytes
 Percent Size: 55.86 %
 
-Run Pixel Total: 37464
-Cache Pixel Total: 81562
-Small Delta Pixel Total: 37066
-Delta Pixel Total: 218853
-Original Pixel Total: 18271
+Run Pixel Total: 37464 (~82812 bytes saved)
+Cache Pixel Total: 81562 (~163124 bytes saved)
+Small Delta Pixel Total: 37066 (~74132 bytes saved)
+Delta Pixel Total: 218853 (~218853 bytes saved)
+Original Pixel Total: 18271 (~6090 bytes gained)
 
 kodim11
 Original Size: 1179648 bytes
 Compressed Size: 669489 bytes
 Percent Size: 56.75 %
 
-Run Pixel Total: 46682
-Cache Pixel Total: 92734
-Small Delta Pixel Total: 24526
-Delta Pixel Total: 198120
-Original Pixel Total: 31154
+Run Pixel Total: 46682 (~108673 bytes saved)
+Cache Pixel Total: 92734 (~185468 bytes saved)
+Small Delta Pixel Total: 24526 (~49052 bytes saved)
+Delta Pixel Total: 198120 (~198120 bytes saved)
+Original Pixel Total: 31154 (~10384 bytes gained)
 
 kodim12
 Original Size: 1179648 bytes
 Compressed Size: 581625 bytes
 Percent Size: 49.31 %
 
-Run Pixel Total: 57120
-Cache Pixel Total: 127055
-Small Delta Pixel Total: 34114
-Delta Pixel Total: 160786
-Original Pixel Total: 14141
+Run Pixel Total: 57120 (~129040 bytes saved)
+Cache Pixel Total: 127055 (~254110 bytes saved)
+Small Delta Pixel Total: 34114 (~68228 bytes saved)
+Delta Pixel Total: 160786 (~160786 bytes saved)
+Original Pixel Total: 14141 (~4713 bytes gained)
 
 kodim13
 Original Size: 1179648 bytes
 Compressed Size: 839493 bytes
 Percent Size: 71.17 %
 
-Run Pixel Total: 13369
-Cache Pixel Total: 24825
-Small Delta Pixel Total: 13814
-Delta Pixel Total: 286194
-Original Pixel Total: 55014
+Run Pixel Total: 13369 (~31697 bytes saved)
+Cache Pixel Total: 24825 (~49650 bytes saved)
+Small Delta Pixel Total: 13814 (~27628 bytes saved)
+Delta Pixel Total: 286194 (~286194 bytes saved)
+Original Pixel Total: 55014 (~18338 bytes gained)
 
 kodim14
 Original Size: 1179648 bytes
 Compressed Size: 746885 bytes
 Percent Size: 63.32 %
 
-Run Pixel Total: 28540
-Cache Pixel Total: 60994
-Small Delta Pixel Total: 25672
-Delta Pixel Total: 236350
-Original Pixel Total: 41660
+Run Pixel Total: 28540 (~64741 bytes saved)
+Cache Pixel Total: 60994 (~121988 bytes saved)
+Small Delta Pixel Total: 25672 (~51344 bytes saved)
+Delta Pixel Total: 236350 (~236350 bytes saved)
+Original Pixel Total: 41660 (~13886 bytes gained)
 
 kodim15
 Original Size: 1179648 bytes
 Compressed Size: 699591 bytes
 Percent Size: 59.31 %
 
-Run Pixel Total: 52599
-Cache Pixel Total: 74068
-Small Delta Pixel Total: 36258
-Delta Pixel Total: 183828
-Original Pixel Total: 46463
+Run Pixel Total: 52599 (~122040 bytes saved)
+Cache Pixel Total: 74068 (~148136 bytes saved)
+Small Delta Pixel Total: 36258 (~72516 bytes saved)
+Delta Pixel Total: 183828 (~183828 bytes saved)
+Original Pixel Total: 46463 (~15487 bytes gained)
 
 kodim16
 Original Size: 1179648 bytes
 Compressed Size: 577229 bytes
 Percent Size: 48.93 %
 
-Run Pixel Total: 56736
-Cache Pixel Total: 117483
-Small Delta Pixel Total: 30223
-Delta Pixel Total: 182812
-Original Pixel Total: 5962
+Run Pixel Total: 56736 (~130157 bytes saved)
+Cache Pixel Total: 117483 (~234966 bytes saved)
+Small Delta Pixel Total: 30223 (~60446 bytes saved)
+Delta Pixel Total: 182812 (~182812 bytes saved)
+Original Pixel Total: 5962 (~1987 bytes gained)
 
 kodim17
 Original Size: 1179648 bytes
 Compressed Size: 646357 bytes
 Percent Size: 54.79 %
 
-Run Pixel Total: 39301
-Cache Pixel Total: 83409
-Small Delta Pixel Total: 34642
-Delta Pixel Total: 222821
-Original Pixel Total: 13043
+Run Pixel Total: 39301 (~87411 bytes saved)
+Cache Pixel Total: 83409 (~166818 bytes saved)
+Small Delta Pixel Total: 34642 (~69284 bytes saved)
+Delta Pixel Total: 222821 (~222821 bytes saved)
+Original Pixel Total: 13043 (~4347 bytes gained)
 
 kodim18
 Original Size: 1179648 bytes
 Compressed Size: 825011 bytes
 Percent Size: 69.94 %
 
-Run Pixel Total: 11834
-Cache Pixel Total: 33575
-Small Delta Pixel Total: 19952
-Delta Pixel Total: 275352
-Original Pixel Total: 52503
+Run Pixel Total: 11834 (~24734 bytes saved)
+Cache Pixel Total: 33575 (~67150 bytes saved)
+Small Delta Pixel Total: 19952 (~39904 bytes saved)
+Delta Pixel Total: 275352 (~275352 bytes saved)
+Original Pixel Total: 52503 (~17501 bytes gained)
 
 kodim19
 Original Size: 1179648 bytes
 Compressed Size: 719804 bytes
 Percent Size: 61.02 %
 
-Run Pixel Total: 25956
-Cache Pixel Total: 72925
-Small Delta Pixel Total: 30477
-Delta Pixel Total: 230869
-Original Pixel Total: 32989
+Run Pixel Total: 25956 (~55160 bytes saved)
+Cache Pixel Total: 72925 (~145850 bytes saved)
+Small Delta Pixel Total: 30477 (~60954 bytes saved)
+Delta Pixel Total: 230869 (~230869 bytes saved)
+Original Pixel Total: 32989 (~10996 bytes gained)
 
 kodim20
 Original Size: 1179648 bytes
 Compressed Size: 531162 bytes
 Percent Size: 45.03 %
 
-Run Pixel Total: 75124
-Cache Pixel Total: 145897
-Small Delta Pixel Total: 18047
-Delta Pixel Total: 138713
-Original Pixel Total: 15435
+Run Pixel Total: 75124 (~197320 bytes saved)
+Cache Pixel Total: 145897 (~291794 bytes saved)
+Small Delta Pixel Total: 18047 (~36094 bytes saved)
+Delta Pixel Total: 138713 (~138713 bytes saved)
+Original Pixel Total: 15435 (~5145 bytes gained)
 
 kodim21
 Original Size: 1179648 bytes
 Compressed Size: 666626 bytes
 Percent Size: 56.51 %
 
-Run Pixel Total: 28077
-Cache Pixel Total: 111456
-Small Delta Pixel Total: 24866
-Delta Pixel Total: 204480
-Original Pixel Total: 24337
+Run Pixel Total: 28077 (~60235 bytes saved)
+Cache Pixel Total: 111456 (~222912 bytes saved)
+Small Delta Pixel Total: 24866 (~49732 bytes saved)
+Delta Pixel Total: 204480 (~204480 bytes saved)
+Original Pixel Total: 24337 (~8112 bytes gained)
 
 kodim22
 Original Size: 1179648 bytes
 Compressed Size: 762564 bytes
 Percent Size: 64.64 %
 
-Run Pixel Total: 17215
-Cache Pixel Total: 52493
-Small Delta Pixel Total: 24197
-Delta Pixel Total: 263068
-Original Pixel Total: 36243
+Run Pixel Total: 17215 (~36879 bytes saved)
+Cache Pixel Total: 52493 (~104986 bytes saved)
+Small Delta Pixel Total: 24197 (~48394 bytes saved)
+Delta Pixel Total: 263068 (~263068 bytes saved)
+Original Pixel Total: 36243 (~12081 bytes gained)
 
 kodim23
 Original Size: 1179648 bytes
 Compressed Size: 680882 bytes
 Percent Size: 57.72 %
 
-Run Pixel Total: 46082
-Cache Pixel Total: 55232
-Small Delta Pixel Total: 47839
-Delta Pixel Total: 216863
-Original Pixel Total: 27200
+Run Pixel Total: 46082 (~102961 bytes saved)
+Cache Pixel Total: 55232 (~110464 bytes saved)
+Small Delta Pixel Total: 47839 (~95678 bytes saved)
+Delta Pixel Total: 216863 (~216863 bytes saved)
+Original Pixel Total: 27200 (~9066 bytes gained)
 
 kodim24
 Original Size: 1179648 bytes
 Compressed Size: 732046 bytes
 Percent Size: 62.06 %
 
-Run Pixel Total: 47780
-Cache Pixel Total: 48675
-Small Delta Pixel Total: 28368
-Delta Pixel Total: 221809
-Original Pixel Total: 46584
+Run Pixel Total: 47780 (~118291 bytes saved)
+Cache Pixel Total: 48675 (~97350 bytes saved)
+Small Delta Pixel Total: 28368 (~56736 bytes saved)
+Delta Pixel Total: 221809 (~221809 bytes saved)
+Original Pixel Total: 46584 (~15528 bytes gained)
 
-Encode took 202.192000 milliseconds
-Decode took 203.954000 milliseconds
-
+Encode took 203.956000 milliseconds
+Decode took 199.109000 milliseconds
