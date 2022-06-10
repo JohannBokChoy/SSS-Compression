@@ -29,20 +29,28 @@ We can store a "cache" of the most recently encountered 64 unique pixel values, 
 If none of the above encoding methods fit a pixel value, we will need to store the original rgb data in our encoding. However, it is important to note that since we are using tag bits to determine the method of encoding, we will now need to store the pixel values in more than 3 bytes since we need extra bits for the tag. Thus, we use an 8-bit tag (to stay within word boundaries) to mark that a pixel in the encoding is encoded as the original pixel data.
 
 ## Benchmark
-I ran benchmarks using Kodak's PNG image library*. All images were either 768x512 or 512x768.
-![image](http://r0k.us/graphics/kodak/kodim01.html)
+I ran benchmarks using Kodak's PNG image library*. All images were either 768x512 or 512x768. Below are some examples from the benchmarks. Note that statistics are included on how many pixels are encoded using each of the above methods.
+
+
+![image](https://user-images.githubusercontent.com/37307088/173007684-cf8ec9bc-1eb5-4fad-a5c5-92e1dd46a19e.png)
+
 ![image](https://user-images.githubusercontent.com/37307088/173007085-167b481b-45ce-4fbf-8e97-921a60eb7852.png)
+
 **PNG Size: 736,501 bytes
 
 ![image](https://user-images.githubusercontent.com/37307088/173007371-a736f754-d861-4d5b-9ed7-45eaa5826b1d.png)
+
 ![image](https://user-images.githubusercontent.com/37307088/173007434-e969dc7e-aede-48b5-9d9e-55ab1a0c34d8.png)
+
 **PNG Size: 637,432 bytes
+
+I was unable to get PNG compression time benchmarks on my system using C, but
 
 
 
 ## Potential Optimizations
-**Significant**
 - One potential optimization that could result in significant compression ratio gains is encoding and decoding our image array in a Modified Hilbert curve* order rather than row-wise. This is because adjacent pixels in images tend to have similar rgb values, so if we can traverse our image in a "group-like" fashion while encoding, we may see more pixels that can be encoded as a run, as a delta, or as a member of the lookback array, as compared to our current row-wise traversal. Attached below is an image that represents an example of a modified Hilbert traversal path.
+
 ![image](https://user-images.githubusercontent.com/37307088/172988953-072b47c3-bf0a-4a7e-852c-e4e262f1996b.png)
 
 **Minor**
@@ -61,11 +69,13 @@ Outside of real-time computer vision applications, speed-optimized image compres
 [Cloud computing for CV #2](https://www.automate.org/industry-insights/cloud-computing-machine-vision-s-newest-workhorse)
 
 [Delta encoding for image compression](http://www.diva-portal.org/smash/get/diva2:817831/FULLTEXT01.pdf)
+
 [QOI](https://qoiformat.org/qoi-specification.pdf)
+
 [zlib](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2 - zlib)
+
 [Modified Hilbert curve for image compression](https://www.mdpi.com/1099-4300/23/7/836/pdf)
+
 [Texture Compression](https://en.wikipedia.org/wiki/Texture_compression)
+
 [Kodak PNG image library for benchmarks](http://r0k.us/graphics/kodak/)
-
-
-![Uploading image.png…]()
