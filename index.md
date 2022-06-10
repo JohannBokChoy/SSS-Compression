@@ -36,7 +36,7 @@ Rather than storing the original pixel, we can store pixels as a delta from the 
 If none of the above encoding methods fit a pixel value, we will need to store the original rgb data in our encoding. However, it is important to note that since we are using tag bits to determine the method of encoding, we will now need to store the pixel values in more than 3 bytes since we need extra bits for the tag. Thus, we use an 8-bit tag (to stay within word boundaries) to mark that a pixel in the encoding is encoded as the original pixel data. Note that for the above methods, we must check them in order of bytes taken to maximize space-saving potential (i.e. so that a pixel that can be stored in one byte as a cache index isn't stored in two bytes as a diff)
 
 ## Benchmark
-I ran benchmarks using a [Kodak PNG image library](http://r0k.us/graphics/kodak/). All images were either 768x512 or 512x768. Below are some examples from the benchmarks. Note that statistics are included on how many pixels are encoded using each of the above methods.
+I ran benchmarks using a [Kodak PNG image library](http://r0k.us/graphics/kodak/). All images were either 768x512 or 512x768. Below are some examples from the benchmarks. Full benchmark is included in benchmark text file in github repo. Note that statistics are included on how many pixels are encoded using each of the above methods.
 
 **kodim01** 
 
@@ -66,24 +66,29 @@ I was unable to get extensive PNG compression time benchmarks on my system using
 
 
 ## Potential Optimizations
+
+**Significant**
 - One potential optimization that could result in significant compression ratio gains is encoding and decoding our image array in a [Modified Hilbert curve](https://www.mdpi.com/1099-4300/23/7/836/pdf) or [Z-order curve](https://en.wikipedia.org/wiki/Z-order_curve) order rather than row-wise. This would be done by first mapping our 2d image data to a 1d stream in Hilbert or Z-order before encoding. Note that this would add some latency to process the image but would likely result in some compression gains, especially in "blocky" images. This is because adjacent pixels in images tend to have similar rgb values, so if we can traverse our image in a "group-like" fashion while encoding, we may see more pixels that can be encoded as a run, as a delta, or as a member of the lookback array, as compared to our current row-wise traversal, which has some issues like jumping from the end of one row to the start of the next. Note that for real-world use cases, if the images being uploaded are of the same resolution, the mapping can be stored in memory and done quickly instead of processing them for every image.More simply, we could also choose to traverse in a zig-zag order. Attached below is an image that represents an example of a modified Hilbert traversal path.
 
 ![image](https://user-images.githubusercontent.com/37307088/172988953-072b47c3-bf0a-4a7e-852c-e4e262f1996b.png)
+*Hilbert curve*
 ![image](https://user-images.githubusercontent.com/37307088/173155160-363d4ce4-83e5-404b-b00a-a5e442eb6692.png)
-
-
-- Some tweaking of the existing hash function could also reduce the number of hash collisions in our lookback array that might result in slight gains.
-
-![image](https://user-images.githubusercontent.com/37307088/172988953-072b47c3-bf0a-4a7e-852c-e4e262f1996b.png)
+*Z-order curve*
 
 **Minor**
+
+- Some tweaking of the existing hash function could also reduce the number of hash collisions in our lookback array that might result in slight gains.
 - Likely many logic optimizations possible in the current code. Also, code is written on top of our CSE455 uwimg library which has functions (like extra checks in set_pixel()) which are not optimized for our use case.
 - One downside of this method is that for images with very low redundancy, it could actually output a file that is larger than the original (since pixels that can't be encoded using the redundancy methods will take up an extra byte each).
 
 
-### Notes
+## Notes
 
--Many encoding method details inspired from existing "fast" compression utilities including [QOI](https://qoiformat.org/qoi-specification.pdf) and [zlib](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2), but code is written myself on top of uwimg library
+-- Many encoding method details inspired from existing compression utilities including [QOI](https://qoiformat.org/qoi-specification.pdf) and [zlib](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2), but code and benchmarks are written myself on top of uwimg library
+
+- In order to compile and run files, add them to the CSE455 uwimg/src directory. Also, note that load_image and image.h have been modified to store r,g,b values as unsigned chars instead of floats from 0 to 1.0 for speed purposes.
+
+- Outside of real-time computer vision applications, speed-optimized image compression also has other niche use cases such as 3D Graphics where [textures can be compressed](https://en.wikipedia.org/wiki/Texture_compression) in memory if decompression can be done quicklyttps://datatracker.ietf.org/doc/html/rfc1950#section-2.2), but code is written myself on top of uwimg library
 
 - In order to compile and run files, add included files to the CSE455 uwimg src directory. Note that I modified load_image and image as well to store the values as r,g,b from 0 to 255 instead of floats from 0 to 1.0
 
