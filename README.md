@@ -60,6 +60,7 @@ I was unable to get extensive PNG compression time benchmarks on my system using
 
 
 ## Potential Optimizations
+
 **Significant**
 - One potential optimization that could result in significant compression ratio gains is encoding and decoding our image array in a [Modified Hilbert curve](https://www.mdpi.com/1099-4300/23/7/836/pdf) or [Z-order curve](https://en.wikipedia.org/wiki/Z-order_curve) order rather than row-wise. This would be done by first mapping our 2d image data to a 1d stream in Hilbert or Z-order before encoding. Note that this would add some latency to process the image but would likely result in some compression gains, especially in "blocky" images. This is because adjacent pixels in images tend to have similar rgb values, so if we can traverse our image in a "group-like" fashion while encoding, we may see more pixels that can be encoded as a run, as a delta, or as a member of the lookback array, as compared to our current row-wise traversal, which has some issues like jumping from the end of one row to the start of the next. Note that for real-world use cases, if the images being uploaded are of the same resolution, the mapping can be stored in memory and done quickly instead of processing them for every image.More simply, we could also choose to traverse in a simpler row-wise zig-zag order.
 
@@ -75,7 +76,7 @@ I was unable to get extensive PNG compression time benchmarks on my system using
 - Likely many logic optimizations possible in the current code. Also, code is written on top of our CSE455 uwimg library which has functions (like extra checks in set_pixel()) which are not optimized for our use case.
 
 
-### Notes
+## Notes
 
 - Many encoding method details inspired from existing compression utilities including [QOI](https://qoiformat.org/qoi-specification.pdf) and [zlib](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2), but code and benchmarks are written myself on top of uwimg library
 
