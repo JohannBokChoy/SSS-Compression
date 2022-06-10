@@ -6,9 +6,9 @@
 - One bottleneck of this utilization is upload speed
 - Lossless image compression is a tradeoff between speed (of encoding and decoding) and compression ratio
 - Most popular current methods (PNG, WebP, FLIF) focus on the latter at expense of speed
-- Real-time applications may prioritize low-latency over  
+- Real-time applications may prioritize low-latency over optimized compression
 - Need for a fast image compression algorithm
-- Aim to build a significantly quicker image compression method with comparable compression ability
+- Aim to build a significantly quicker image compression method with decent/comparable compression ability
 
 ## Approach
 In order to achieve significant speedup, I tried to combine multiple lossless compression methods that can all be done in one pass of the image. As a result,
