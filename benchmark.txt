@@ -1,0 +1,267 @@
+kodim01
+Original Size: 1179648 bytes
+Compressed Size: 745675 bytes
+Percent Size: 63.21 %
+
+Run Pixel Total: 24897
+Cache Pixel Total: 63216
+Small Delta Pixel Total: 20339
+Delta Pixel Total: 247284
+Original Pixel Total: 37480
+
+kodim02
+Original Size: 1179648 bytes
+Compressed Size: 673048 bytes
+Percent Size: 57.06 %
+
+Run Pixel Total: 36720
+Cache Pixel Total: 109428
+Small Delta Pixel Total: 27359
+Delta Pixel Total: 184777
+Original Pixel Total: 34932
+
+kodim03
+Original Size: 1179648 bytes
+Compressed Size: 562431 bytes
+Percent Size: 47.68 %
+
+Run Pixel Total: 79410
+Cache Pixel Total: 110429
+Small Delta Pixel Total: 37501
+Delta Pixel Total: 150823
+Original Pixel Total: 15053
+
+kodim04
+Original Size: 1179648 bytes
+Compressed Size: 722254 bytes
+Percent Size: 61.23 %
+
+Run Pixel Total: 33628
+Cache Pixel Total: 58668
+Small Delta Pixel Total: 34038
+Delta Pixel Total: 231853
+Original Pixel Total: 35029
+
+kodim05
+Original Size: 1179648 bytes
+Compressed Size: 836294 bytes
+Percent Size: 70.89 %
+
+Run Pixel Total: 21696
+Cache Pixel Total: 29003
+Small Delta Pixel Total: 24600
+Delta Pixel Total: 252334
+Original Pixel Total: 65583
+
+kodim6
+Original Size: 1179648 bytes
+Compressed Size: 657095 bytes
+Percent Size: 55.70 %
+
+Run Pixel Total: 38097
+Cache Pixel Total: 88051
+Small Delta Pixel Total: 28838
+Delta Pixel Total: 220387
+Original Pixel Total: 17843
+
+kodim7
+Original Size: 1179648 bytes
+Compressed Size: 614640 bytes
+Percent Size: 52.10 %
+
+Run Pixel Total: 65706
+Cache Pixel Total: 98504
+Small Delta Pixel Total: 34772
+Delta Pixel Total: 170437
+Original Pixel Total: 23797
+
+kodim8
+Original Size: 1179648 bytes
+Compressed Size: 874421 bytes
+Percent Size: 74.13 %
+
+Run Pixel Total: 18695
+Cache Pixel Total: 36110
+Small Delta Pixel Total: 18218
+Delta Pixel Total: 236526
+Original Pixel Total: 83667
+
+kodim9
+Original Size: 1179648 bytes
+Compressed Size: 618377 bytes
+Percent Size: 52.42 %
+
+Run Pixel Total: 39568
+Cache Pixel Total: 123852
+Small Delta Pixel Total: 29970
+Delta Pixel Total: 183135
+Original Pixel Total: 16691
+
+kodim10
+Original Size: 1179648 bytes
+Compressed Size: 658998 bytes
+Percent Size: 55.86 %
+
+Run Pixel Total: 37464
+Cache Pixel Total: 81562
+Small Delta Pixel Total: 37066
+Delta Pixel Total: 218853
+Original Pixel Total: 18271
+
+kodim11
+Original Size: 1179648 bytes
+Compressed Size: 669489 bytes
+Percent Size: 56.75 %
+
+Run Pixel Total: 46682
+Cache Pixel Total: 92734
+Small Delta Pixel Total: 24526
+Delta Pixel Total: 198120
+Original Pixel Total: 31154
+
+kodim12
+Original Size: 1179648 bytes
+Compressed Size: 581625 bytes
+Percent Size: 49.31 %
+
+Run Pixel Total: 57120
+Cache Pixel Total: 127055
+Small Delta Pixel Total: 34114
+Delta Pixel Total: 160786
+Original Pixel Total: 14141
+
+kodim13
+Original Size: 1179648 bytes
+Compressed Size: 839493 bytes
+Percent Size: 71.17 %
+
+Run Pixel Total: 13369
+Cache Pixel Total: 24825
+Small Delta Pixel Total: 13814
+Delta Pixel Total: 286194
+Original Pixel Total: 55014
+
+kodim14
+Original Size: 1179648 bytes
+Compressed Size: 746885 bytes
+Percent Size: 63.32 %
+
+Run Pixel Total: 28540
+Cache Pixel Total: 60994
+Small Delta Pixel Total: 25672
+Delta Pixel Total: 236350
+Original Pixel Total: 41660
+
+kodim15
+Original Size: 1179648 bytes
+Compressed Size: 699591 bytes
+Percent Size: 59.31 %
+
+Run Pixel Total: 52599
+Cache Pixel Total: 74068
+Small Delta Pixel Total: 36258
+Delta Pixel Total: 183828
+Original Pixel Total: 46463
+
+kodim16
+Original Size: 1179648 bytes
+Compressed Size: 577229 bytes
+Percent Size: 48.93 %
+
+Run Pixel Total: 56736
+Cache Pixel Total: 117483
+Small Delta Pixel Total: 30223
+Delta Pixel Total: 182812
+Original Pixel Total: 5962
+
+kodim17
+Original Size: 1179648 bytes
+Compressed Size: 646357 bytes
+Percent Size: 54.79 %
+
+Run Pixel Total: 39301
+Cache Pixel Total: 83409
+Small Delta Pixel Total: 34642
+Delta Pixel Total: 222821
+Original Pixel Total: 13043
+
+kodim18
+Original Size: 1179648 bytes
+Compressed Size: 825011 bytes
+Percent Size: 69.94 %
+
+Run Pixel Total: 11834
+Cache Pixel Total: 33575
+Small Delta Pixel Total: 19952
+Delta Pixel Total: 275352
+Original Pixel Total: 52503
+
+kodim19
+Original Size: 1179648 bytes
+Compressed Size: 719804 bytes
+Percent Size: 61.02 %
+
+Run Pixel Total: 25956
+Cache Pixel Total: 72925
+Small Delta Pixel Total: 30477
+Delta Pixel Total: 230869
+Original Pixel Total: 32989
+
+kodim20
+Original Size: 1179648 bytes
+Compressed Size: 531162 bytes
+Percent Size: 45.03 %
+
+Run Pixel Total: 75124
+Cache Pixel Total: 145897
+Small Delta Pixel Total: 18047
+Delta Pixel Total: 138713
+Original Pixel Total: 15435
+
+kodim21
+Original Size: 1179648 bytes
+Compressed Size: 666626 bytes
+Percent Size: 56.51 %
+
+Run Pixel Total: 28077
+Cache Pixel Total: 111456
+Small Delta Pixel Total: 24866
+Delta Pixel Total: 204480
+Original Pixel Total: 24337
+
+kodim22
+Original Size: 1179648 bytes
+Compressed Size: 762564 bytes
+Percent Size: 64.64 %
+
+Run Pixel Total: 17215
+Cache Pixel Total: 52493
+Small Delta Pixel Total: 24197
+Delta Pixel Total: 263068
+Original Pixel Total: 36243
+
+kodim23
+Original Size: 1179648 bytes
+Compressed Size: 680882 bytes
+Percent Size: 57.72 %
+
+Run Pixel Total: 46082
+Cache Pixel Total: 55232
+Small Delta Pixel Total: 47839
+Delta Pixel Total: 216863
+Original Pixel Total: 27200
+
+kodim24
+Original Size: 1179648 bytes
+Compressed Size: 732046 bytes
+Percent Size: 62.06 %
+
+Run Pixel Total: 47780
+Cache Pixel Total: 48675
+Small Delta Pixel Total: 28368
+Delta Pixel Total: 221809
+Original Pixel Total: 46584
+
+Encode took 202.192000 milliseconds
+Decode took 203.954000 milliseconds
+
