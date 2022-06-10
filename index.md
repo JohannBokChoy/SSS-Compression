@@ -34,26 +34,7 @@ If none of the above encoding methods fit a pixel value, we will need to store t
 ![image](https://user-images.githubusercontent.com/37307088/172988953-072b47c3-bf0a-4a7e-852c-e4e262f1996b.png)
 **Minor**
 - Likely many logic optimizations possible in the current code. Also, code is written on top of our CSE455 uwimg library which has functions (like extra checks in set_pixel()) which are not optimized for our use case.
-- 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ### Notes
 
@@ -62,11 +43,8 @@ Many encoding method details taken from existing file formats including qoi* and
 Outside of real-time computer vision applications, speed-optimized image compression also has other niche use cases such as 3D Graphics where textures can be compressed* in memory since decompression can be done almost instantaneously
 
 ### Citations
-Articles regarding computer vision applications utilizing cloud computing
 [Link](https://www.automate.org/blogs/machine-vision-users-begin-adopting-cloud-computing)
 [Link](https://www.automate.org/industry-insights/cloud-computing-machine-vision-s-newest-workhorse)
-
-Compression Methods
 [Link](http://www.diva-portal.org/smash/get/diva2:817831/FULLTEXT01.pdf) - Delta encoding for image compression
 [Link](https://qoiformat.org/qoi-specification.pdf) - QOI
 [Link](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2 - zlib)
