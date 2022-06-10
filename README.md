@@ -77,7 +77,9 @@ I was unable to get extensive PNG compression time benchmarks on my system using
 
 ### Notes
 
-Many encoding method details inspired from existing compression utilities including [QOI](https://qoiformat.org/qoi-specification.pdf) and [zlib](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2), but code and benchmarks are written myself on top of uwimg library
+- Many encoding method details inspired from existing compression utilities including [QOI](https://qoiformat.org/qoi-specification.pdf) and [zlib](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2), but code and benchmarks are written myself on top of uwimg library
 
-Outside of real-time computer vision applications, speed-optimized image compression also has other niche use cases such as 3D Graphics where [textures can be compressed](https://en.wikipedia.org/wiki/Texture_compression) in memory if decompression can be done quickly
+- In order to compile and run files, add them to the CSE455 uwimg/src directory. Also, note that load_image and image.h have been modified to store r,g,b values as unsigned chars instead of floats from 0 to 1.0 for speed purposes.
+
+- Outside of real-time computer vision applications, speed-optimized image compression also has other niche use cases such as 3D Graphics where [textures can be compressed](https://en.wikipedia.org/wiki/Texture_compression) in memory if decompression can be done quickly
 
