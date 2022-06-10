@@ -30,25 +30,29 @@ If none of the above encoding methods fit a pixel value, we will need to store t
 
 ## Potential Optimizations
 **Significant**
-- One potential optimization that could result in significant compression ratio gains is encoding and decoding our image array in a Modified Hilbert curve* order rather than row-wise. This is because adjacent pixels in images tend to have similar rgb values, so if we can traverse our image in a "group-like" fashion while encoding, we may see more pixels that can be encoded as a run, as a delta, or as a member of the lookback array, as compared to our current row-wise traversal.
+- One potential optimization that could result in significant compression ratio gains is encoding and decoding our image array in a Modified Hilbert curve* order rather than row-wise. This is because adjacent pixels in images tend to have similar rgb values, so if we can traverse our image in a "group-like" fashion while encoding, we may see more pixels that can be encoded as a run, as a delta, or as a member of the lookback array, as compared to our current row-wise traversal. Attached below is an image that represents an example of a modified Hilbert traversal path.
 ![image](https://user-images.githubusercontent.com/37307088/172988953-072b47c3-bf0a-4a7e-852c-e4e262f1996b.png)
+
 **Minor**
 - Likely many logic optimizations possible in the current code. Also, code is written on top of our CSE455 uwimg library which has functions (like extra checks in set_pixel()) which are not optimized for our use case.
 
 
 ### Notes
 
-Many encoding method details taken from existing file formats including qoi* and zlib*, but code is written myself
+Many encoding method details taken from existing compression utilities including qoi* and zlib*, but code is written myself on top of uwimg library
 
 Outside of real-time computer vision applications, speed-optimized image compression also has other niche use cases such as 3D Graphics where textures can be compressed* in memory since decompression can be done almost instantaneously
 
 ### Citations
-[Link](https://www.automate.org/blogs/machine-vision-users-begin-adopting-cloud-computing)
-[Link](https://www.automate.org/industry-insights/cloud-computing-machine-vision-s-newest-workhorse)
-[Link](http://www.diva-portal.org/smash/get/diva2:817831/FULLTEXT01.pdf) - Delta encoding for image compression
-[Link](https://qoiformat.org/qoi-specification.pdf) - QOI
-[Link](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2 - zlib)
-[Link](https://www.mdpi.com/1099-4300/23/7/836/pdf) - Modified Hilbert curve for image compression
-[Link](https://en.wikipedia.org/wiki/Texture_compression)
+[Cloud computing for CV](https://www.automate.org/blogs/machine-vision-users-begin-adopting-cloud-computing)
+
+[Cloud computing for CV #2](https://www.automate.org/industry-insights/cloud-computing-machine-vision-s-newest-workhorse)
+
+[Delta encoding for image compression](http://www.diva-portal.org/smash/get/diva2:817831/FULLTEXT01.pdf)
+[QOI](https://qoiformat.org/qoi-specification.pdf)
+[zlib](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2 - zlib)
+[Modified Hilbert curve for image compression](https://www.mdpi.com/1099-4300/23/7/836/pdf)
+[Texture Compression](https://en.wikipedia.org/wiki/Texture_compression)
+[Kodak PNG image library for benchmarks](http://r0k.us/graphics/kodak/)
 
 
