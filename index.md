@@ -38,25 +38,28 @@ If none of the above encoding methods fit a pixel value, we will need to store t
 ## Benchmark
 I ran benchmarks using a [Kodak PNG image library](http://r0k.us/graphics/kodak/). All images were either 768x512 or 512x768. Below are some examples from the benchmarks. Note that statistics are included on how many pixels are encoded using each of the above methods.
 
+**kodim01** 
+
+**PNG Size: 736,501 bytes: 1.60x compression **
+**Our size: 745,676 bytes: 1.58x compression**
 
 ![image](https://user-images.githubusercontent.com/37307088/173007684-cf8ec9bc-1eb5-4fad-a5c5-92e1dd46a19e.png)
 
-![image](https://user-images.githubusercontent.com/37307088/173007085-167b481b-45ce-4fbf-8e97-921a60eb7852.png)
+![image](https://user-images.githubusercontent.com/37307088/173160582-769045f4-c805-4027-ad4c-03a0bd0af284.png)
 
-**PNG Size: 736,501 bytes**
-**Our size: 745,597 bytes**
 
+**kodim04** 
+
+**PNG Size: 634,432 bytes: 1.86x compression**
+**Our size: 722,254 bytes: 1.63x compression**
 ![image](https://user-images.githubusercontent.com/37307088/173007371-a736f754-d861-4d5b-9ed7-45eaa5826b1d.png)
 
-![image](https://user-images.githubusercontent.com/37307088/173007434-e969dc7e-aede-48b5-9d9e-55ab1a0c34d8.png)
-
-**PNG Size: 637,432 bytes**
-**Our size: 835,703 bytes**
-
-For images with high redundancy, our method seems to perform about the same as png. For images with lesser redundancy (second image), our files were slightly larger.
-I was unable to get extensive PNG compression time benchmarks on my system using C, but estimates on a single 768x512 image were about 200 ms to encode.
+![image](https://user-images.githubusercontent.com/37307088/173160468-7f583258-0438-4deb-bef0-22bc75681fce.png)
 
 
+On this dataset, our method seemed to consistently compress similarly but not quite as efficiently as PNG. The compression ratio seemed to be closer for images with higher redundancy, and farther for images with lesser redundancy (second image), which makes sense, as most of our encoding methods focus on repeated (similar) pixels.
+In total, encoding of these 24 images took 203.956 ms while decoding took 199.109 ms, for an average of 8.5ms per image. 
+I was unable to get extensive PNG compression time benchmarks on my system using C, but a single 768x512 image were about ~100 ms to encode, which means that our preliminary data suggests that method encodes about 11-12x faster for images of this size.
 
 
 ## Potential Optimizations
@@ -72,11 +75,12 @@ I was unable to get extensive PNG compression time benchmarks on my system using
 
 **Minor**
 - Likely many logic optimizations possible in the current code. Also, code is written on top of our CSE455 uwimg library which has functions (like extra checks in set_pixel()) which are not optimized for our use case.
+- One downside of this method is that for images with very low redundancy, it could actually output a file that is larger than the original (since pixels that can't be encoded using the redundancy methods will take up an extra byte each).
 
 
 ### Notes
 
-Many encoding method details inspired from existing compression utilities including [QOI](https://qoiformat.org/qoi-specification.pdf) and [zlib](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2), but code is written myself on top of uwimg library
+Many encoding method details inspired from existing "fast" compression utilities including [QOI](https://qoiformat.org/qoi-specification.pdf) and [zlib](https://datatracker.ietf.org/doc/html/rfc1950#section-2.2), but code is written myself on top of uwimg library
 
 Outside of real-time computer vision applications, speed-optimized image compression also has other niche use cases such as 3D Graphics where [textures can be compressed](https://en.wikipedia.org/wiki/Texture_compression) in memory if decompression can be done quickly
 
