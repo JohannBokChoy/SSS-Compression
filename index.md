@@ -1,5 +1,7 @@
 # Simple Speedy Single-Pass Lossless Image Compression
 
+[Project Video](https://youtu.be/T7yTVNIIl48)
+
 ## Overview
 
 - Some computer vision applications utilize cloud computing to handle large amounts of data
@@ -92,4 +94,5 @@ I was unable to get extensive PNG compression time benchmarks on my system using
 - In order to compile and run files, add them to the CSE455 uwimg/src directory. Also, note that load_image and image.h have been modified to store r,g,b values as unsigned chars instead of floats from 0 to 1.0 for speed purposes.
 
 - Outside of real-time computer vision applications, speed-optimized image compression also has other niche use cases such as 3D Graphics where [textures can be stored compressed](https://en.wikipedia.org/wiki/Texture_compression) in memory if decompression can be done quickly
+
 
